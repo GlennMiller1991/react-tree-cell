@@ -1,0 +1,31 @@
+@import './variable.css';
+
+a, a:visited, a:hover, a:active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-family-mono);
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 10px 0;
+  color: inherit;
+  background-color: currentColor;
+  opacity: 25%;
+}

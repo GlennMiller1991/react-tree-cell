@@ -1,0 +1,18 @@
+.renderCountValue {
+  z-index: 1;
+  background: white;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  border: 2px solid var(--unnecessary-font-color);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.renderCountValue:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .02);
+}
+

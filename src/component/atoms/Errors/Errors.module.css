@@ -1,0 +1,5 @@
+.detailsContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: clip;
+}

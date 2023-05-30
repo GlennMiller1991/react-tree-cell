@@ -1,0 +1,14 @@
+{
+  "extends": "@do-while-for-each/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "../../dist",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": [
+    "regress"
+  ]
+}

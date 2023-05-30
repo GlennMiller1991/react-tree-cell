@@ -1,0 +1,14 @@
+{
+  "extends": "@do-while-for-each/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noPropertyAccessFromIndexSignature": false
+  },
+  "exclude": [
+    "__tests__"
+  ]
+}

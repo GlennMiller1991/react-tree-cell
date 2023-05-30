@@ -1,0 +1,102 @@
+@import '~normalize.css';
+@import '~@do-while-for-each/font-jetbrains-mono';
+@import '~@do-while-for-each/font-barlow';
+@import './system.override.css';
+@import './variable.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-barlow);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+
+#root {
+  display: grid;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+
+.selectedRow {
+  background: lightgray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead > tr:first-child > th {
+  border: none;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.input, .input:focus, .input:disabled {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  background: transparent;
+  color: black;
+}
+
+.input:disabled {
+  cursor: default;
+}
+
+.saveBtn {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.disabledInput:disabled {
+  pointer-events: none;
+  background: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table tbody tr {
+  cursor: pointer;
+  position: relative;
+}
+
+.table tbody tr td {
+  position: relative;
+}
+
+.table tbody tr:hover {
+  background: lightgray;
+}
+
+
+.erroredInput, .erroredInput:disabled, .erroredInput:focus {
+  outline: 2px solid pink;
+}
+
+.relative {
+  position: relative;
+}
+
+.alignTextCenter {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "test-tree-cell-react",
+  "license": "UNLICENSED",
+  "private": "true",
+  "scripts": {
+    "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
+    "bootstrap": "npm run clean && npm install",
+    "start": "dwfeBundler opt",
+    "prod": "dwfeBundler opt --prod",
+    "prepare-regress": "dwfeFs rmForce dist --noConfirm && tsc -b src/__tests__/tsconfig.prepare.json && node ./dist/prepare.js",
+    "test": "jest --config=src/__tests__/jest.config.js"
+  },
+  "dependencies": {
+    "@do-while-for-each/react-cmmn-packs": "18.x.x",
+    "@do-while-for-each/react-tools": "1.x.x",
+    "@do-while-for-each/browser-router-react-tools": "3.x.x",
+    "@do-while-for-each/provider": "1.x.x",
+    "@do-while-for-each/font-barlow": "1.x.x",
+    "@do-while-for-each/font-jetbrains-mono": "1.x.x",
+    "normalize.css": "8.0.1",
+    "@do-while-for-each/tree-cell": "1.x.x",
+    "@do-while-for-each/tree-cell-react": "1.x.x",
+    "mobx": "6.6.1",
+    "mobx-react-lite": "3.4.0"
+  },
+  "devDependencies": {
+    "@do-while-for-each/tsconfig": "1.x.x",
+    "@do-while-for-each/bundler": "1.x.x",
+    "@do-while-for-each/automation": "1.x.x"
+  },
+  "dwfeBundlerOptions": {
+    "opt": {
+      "bundler": "react",
+      "entryPoint": "src/index.tsx",
+      "templatePath": "public/index.html",
+      "port": 3300,
+      "printOptions": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

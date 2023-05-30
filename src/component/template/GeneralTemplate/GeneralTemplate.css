@@ -1,0 +1,6 @@
+.general-tmpl {
+  position: relative;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 1fr;
+}
